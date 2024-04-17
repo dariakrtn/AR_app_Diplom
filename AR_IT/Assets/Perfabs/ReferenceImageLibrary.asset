@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848409ee8ba454f42a5ddff137688a27, type: 3}
+  m_Name: ReferenceImageLibrary
+  m_EditorClassIdentifier: 
+  m_GuidLow: 0
+  m_GuidHigh: 0
+  m_DataStore:
+    m_Storage: []
+  m_Images:
+  - m_SerializedGuid:
+      m_GuidLow: 5239500990044848155
+      m_GuidHigh: 2242182351968171669
+    m_SerializedTextureGuid:
+      m_GuidLow: 17867182628745733693
+      m_GuidHigh: 6383545214454280904
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: Impress-1-Human
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5575941978709362486
+      m_GuidHigh: 6982308027118666419
+    m_SerializedTextureGuid:
+      m_GuidLow: 2136006117178195810
+      m_GuidHigh: 7641884058414547194
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: Impress-1-Robot
+    m_Texture: {fileID: 0}
