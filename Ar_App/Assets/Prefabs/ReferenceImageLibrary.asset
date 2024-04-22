@@ -37,3 +37,33 @@ MonoBehaviour:
     m_SpecifySize: 0
     m_Name: Robot
     m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4837271341846939943
+      m_GuidHigh: 3824454761224929947
+    m_SerializedTextureGuid:
+      m_GuidLow: 7436719688732868220
+      m_GuidHigh: 14676466738569410617
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: IT 1
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4937416195567058076
+      m_GuidHigh: 3328401415491073446
+    m_SerializedTextureGuid:
+      m_GuidLow: 1599914241637808929
+      m_GuidHigh: 5900515520614402825
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: IT 3
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5026574415724099392
+      m_GuidHigh: 6335436424954810804
+    m_SerializedTextureGuid:
+      m_GuidLow: 11868263571115942586
+      m_GuidHigh: 5722234231055840923
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: IT2
+    m_Texture: {fileID: 0}
