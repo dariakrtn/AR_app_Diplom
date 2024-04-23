@@ -22783,8 +22783,6 @@ struct IndicatorManager_t74012D641CC66DD8EA960E6CDC79B6EA7B99E0AD  : public Mono
 {
 	// UnityEngine.GameObject IndicatorManager::Indicator
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Indicator_4;
-	// UnityEngine.GameObject IndicatorManager::Camera
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Camera_5;
 };
 
 // UnityEngine.XR.OpenXR.Features.Interactions.KHRSimpleControllerProfile
@@ -22811,6 +22809,10 @@ struct MultipleImagesTrackingManager_tC20A226622E03441FAA109FDBEFDC317607E0E7B  
 	ARTrackedImageManager_tCBA77F0B8A7172CC6508CA29176EAE1DE5DC4BD4* ____arTrackedImageManager_5;
 	// System.Collections.Generic.Dictionary`2<System.String,UnityEngine.GameObject> MultipleImagesTrackingManager::_arObjects
 	Dictionary_2_t0B15A60B00EC883D4249611C6C641C7BED5A71CE* ____arObjects_6;
+	// UnityEngine.GameObject MultipleImagesTrackingManager::Camera
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Camera_7;
+	// UnityEngine.GameObject MultipleImagesTrackingManager::Finder
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Finder_8;
 };
 
 // TMPro.Examples.ObjectSpin
@@ -29131,18 +29133,18 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4603[6] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4604[6] = 
 {
 	static_cast<int32_t>(offsetof(ARFeatheredPlaneMeshVisualizer_t5B508CD2D37F908F4359D7DED031B3C357E34955, ___m_FeatheringWidth_4)),static_cast<int32_t>(offsetof(ARFeatheredPlaneMeshVisualizer_t5B508CD2D37F908F4359D7DED031B3C357E34955_StaticFields, ___s_FeatheringUVs_5)),static_cast<int32_t>(offsetof(ARFeatheredPlaneMeshVisualizer_t5B508CD2D37F908F4359D7DED031B3C357E34955_StaticFields, ___s_Vertices_6)),static_cast<int32_t>(offsetof(ARFeatheredPlaneMeshVisualizer_t5B508CD2D37F908F4359D7DED031B3C357E34955, ___m_PlaneMeshVisualizer_7)),static_cast<int32_t>(offsetof(ARFeatheredPlaneMeshVisualizer_t5B508CD2D37F908F4359D7DED031B3C357E34955, ___m_Plane_8)),static_cast<int32_t>(offsetof(ARFeatheredPlaneMeshVisualizer_t5B508CD2D37F908F4359D7DED031B3C357E34955, ___m_FeatheredPlaneMaterial_9)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4605[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4605[1] = 
 {
-	static_cast<int32_t>(offsetof(IndicatorManager_t74012D641CC66DD8EA960E6CDC79B6EA7B99E0AD, ___Indicator_4)),static_cast<int32_t>(offsetof(IndicatorManager_t74012D641CC66DD8EA960E6CDC79B6EA7B99E0AD, ___Camera_5)),};
+	static_cast<int32_t>(offsetof(IndicatorManager_t74012D641CC66DD8EA960E6CDC79B6EA7B99E0AD, ___Indicator_4)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4606[1] = 
 {
 	static_cast<int32_t>(offsetof(ImageRecognitionExample_tEFC46736618613314D4A5B561A233C9B9D8339F7, ____aRTrackedImageManager_4)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4607[6] = 
 {
 	static_cast<int32_t>(offsetof(ImagesTrackingManager_t6F4C810320C3C0498B4EFD8C267FF71774D9BEF9, ___navigationTargetObjects_4)),static_cast<int32_t>(offsetof(ImagesTrackingManager_t6F4C810320C3C0498B4EFD8C267FF71774D9BEF9, ___Indicator_5)),static_cast<int32_t>(offsetof(ImagesTrackingManager_t6F4C810320C3C0498B4EFD8C267FF71774D9BEF9, ___Camera_6)),static_cast<int32_t>(offsetof(ImagesTrackingManager_t6F4C810320C3C0498B4EFD8C267FF71774D9BEF9, ___navigationTargetDropDown_7)),static_cast<int32_t>(offsetof(ImagesTrackingManager_t6F4C810320C3C0498B4EFD8C267FF71774D9BEF9, ____arTrackedImageManager_8)),static_cast<int32_t>(offsetof(ImagesTrackingManager_t6F4C810320C3C0498B4EFD8C267FF71774D9BEF9, ____arObjects_9)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4608[3] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4608[5] = 
 {
-	static_cast<int32_t>(offsetof(MultipleImagesTrackingManager_tC20A226622E03441FAA109FDBEFDC317607E0E7B, ___prefabsToSpawn_4)),static_cast<int32_t>(offsetof(MultipleImagesTrackingManager_tC20A226622E03441FAA109FDBEFDC317607E0E7B, ____arTrackedImageManager_5)),static_cast<int32_t>(offsetof(MultipleImagesTrackingManager_tC20A226622E03441FAA109FDBEFDC317607E0E7B, ____arObjects_6)),};
+	static_cast<int32_t>(offsetof(MultipleImagesTrackingManager_tC20A226622E03441FAA109FDBEFDC317607E0E7B, ___prefabsToSpawn_4)),static_cast<int32_t>(offsetof(MultipleImagesTrackingManager_tC20A226622E03441FAA109FDBEFDC317607E0E7B, ____arTrackedImageManager_5)),static_cast<int32_t>(offsetof(MultipleImagesTrackingManager_tC20A226622E03441FAA109FDBEFDC317607E0E7B, ____arObjects_6)),static_cast<int32_t>(offsetof(MultipleImagesTrackingManager_tC20A226622E03441FAA109FDBEFDC317607E0E7B, ___Camera_7)),static_cast<int32_t>(offsetof(MultipleImagesTrackingManager_tC20A226622E03441FAA109FDBEFDC317607E0E7B, ___Finder_8)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4609[3] = 
 {
 	static_cast<int32_t>(offsetof(ChatController_t21BE953E1D5ADF0BA9F3B03C205203CADDC64C15, ___ChatInputField_4)),static_cast<int32_t>(offsetof(ChatController_t21BE953E1D5ADF0BA9F3B03C205203CADDC64C15, ___ChatDisplayOutput_5)),static_cast<int32_t>(offsetof(ChatController_t21BE953E1D5ADF0BA9F3B03C205203CADDC64C15, ___ChatScrollbar_6)),};

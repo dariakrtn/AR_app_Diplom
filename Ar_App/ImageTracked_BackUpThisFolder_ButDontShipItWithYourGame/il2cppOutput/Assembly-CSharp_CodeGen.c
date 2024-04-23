@@ -78,8 +78,8 @@ extern void MultipleImagesTrackingManager_Start_mE7FCECA452E94E727B985A7E5A9DBB8
 extern void MultipleImagesTrackingManager_OnDestroy_m335E3F55CDCDFB00198E6C78F3A0C252F1123E22 (void);
 // 0x00000021 System.Void MultipleImagesTrackingManager::OnTrackedImageChanged(UnityEngine.XR.ARFoundation.ARTrackedImagesChangedEventArgs)
 extern void MultipleImagesTrackingManager_OnTrackedImageChanged_m2DE37FB8C17ABC99518C2A12F54A5EBE8077E1A2 (void);
-// 0x00000022 System.Void MultipleImagesTrackingManager::UpdateTrackedImage(UnityEngine.XR.ARFoundation.ARTrackedImage)
-extern void MultipleImagesTrackingManager_UpdateTrackedImage_m14F540C6AE60DD10071A8DBD7D84FA448CBA2A98 (void);
+// 0x00000022 System.Void MultipleImagesTrackingManager::UpdateTrackedImage(UnityEngine.XR.ARFoundation.ARTrackedImage,System.String)
+extern void MultipleImagesTrackingManager_UpdateTrackedImage_m8194FE2ED2172EDAE8983A3CD2DA82ADAED6E860 (void);
 // 0x00000023 System.Void MultipleImagesTrackingManager::.ctor()
 extern void MultipleImagesTrackingManager__ctor_m9820F6EB4FE8467104DC6D033C861D1D1D7DA80D (void);
 // 0x00000024 System.Void ChatController::OnEnable()
@@ -647,7 +647,7 @@ static Il2CppMethodPointer s_methodPointers[300] =
 	MultipleImagesTrackingManager_Start_mE7FCECA452E94E727B985A7E5A9DBB8B89F845AD,
 	MultipleImagesTrackingManager_OnDestroy_m335E3F55CDCDFB00198E6C78F3A0C252F1123E22,
 	MultipleImagesTrackingManager_OnTrackedImageChanged_m2DE37FB8C17ABC99518C2A12F54A5EBE8077E1A2,
-	MultipleImagesTrackingManager_UpdateTrackedImage_m14F540C6AE60DD10071A8DBD7D84FA448CBA2A98,
+	MultipleImagesTrackingManager_UpdateTrackedImage_m8194FE2ED2172EDAE8983A3CD2DA82ADAED6E860,
 	MultipleImagesTrackingManager__ctor_m9820F6EB4FE8467104DC6D033C861D1D1D7DA80D,
 	ChatController_OnEnable_m025CE203564D82A1CDCE5E5719DB07E29811D0B7,
 	ChatController_OnDisable_mD49D03719CAEBB3F59F24A7FA8F4FD30C8B54E46,
@@ -950,7 +950,7 @@ static const int32_t s_InvokerIndices[300] =
 	6062,
 	6062,
 	4718,
-	4834,
+	2539,
 	6062,
 	6062,
 	6062,

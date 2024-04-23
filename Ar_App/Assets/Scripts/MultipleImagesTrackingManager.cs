@@ -12,6 +12,10 @@ public class MultipleImagesTrackingManager : MonoBehaviour
 
     private Dictionary<string, GameObject> _arObjects;
 
+    [SerializeField] private GameObject Camera;
+    [SerializeField] private GameObject Finder;
+
+
     private void Awake()
     {
         _arTrackedImageManager = GetComponent<ARTrackedImageManager>();
@@ -33,37 +37,67 @@ public class MultipleImagesTrackingManager : MonoBehaviour
 
     private void OnDestroy()
     {
-        _arTrackedImageManager.trackedImagesChanged += OnTrackedImageChanged;
+        _arTrackedImageManager.trackedImagesChanged -= OnTrackedImageChanged;
+        Finder.gameObject.SetActive(true);
     }
 
     private void OnTrackedImageChanged(ARTrackedImagesChangedEventArgs eventArgs)
-    {   
-        
-        foreach(ARTrackedImage trackedImage in eventArgs.added) 
+    {
+
+        foreach (ARTrackedImage trackedImage in eventArgs.added) 
         {
-            UpdateTrackedImage(trackedImage);
+            string id = trackedImage.name;
+            UpdateTrackedImage(trackedImage, id);
         }
         foreach (ARTrackedImage trackedImage in eventArgs.updated)
         {
-            UpdateTrackedImage(trackedImage);
+            string id = trackedImage.name;
+            UpdateTrackedImage(trackedImage, id);
         }
         foreach (ARTrackedImage trackedImage in eventArgs.removed)
         {
             _arObjects[trackedImage.referenceImage.name].gameObject.SetActive(false);
+            Finder.gameObject.SetActive(true);
         }
     }
 
-    private void UpdateTrackedImage(ARTrackedImage trackedImage)
+    private void UpdateTrackedImage(ARTrackedImage trackedImage, string id)
     {
-        if (trackedImage.trackingState is  TrackingState.None) { //TrackingState.Limited or
-            _arObjects[trackedImage.referenceImage.name].gameObject.SetActive(false);
-        }
+        if (id == "Human" && id =="Robot" ){ 
+            if (trackedImage.trackingState is  TrackingState.None) { //TrackingState.Limited or
+                _arObjects[trackedImage.referenceImage.name].gameObject.SetActive(false);
+                Finder.gameObject.SetActive(true);
+            }
 
-        if (prefabsToSpawn !=null)
+            if (prefabsToSpawn !=null)
+            {
+                Finder.gameObject.SetActive(false);
+                _arObjects[trackedImage.referenceImage.name].gameObject.SetActive(true);
+                _arObjects[trackedImage.referenceImage.name].transform.position = trackedImage.transform.position;
+
+            }
+        }
+        else
         {
-            _arObjects[trackedImage.referenceImage.name].gameObject.SetActive(true);
-            _arObjects[trackedImage.referenceImage.name].transform.position = trackedImage.transform.position;
+            if (trackedImage.trackingState is TrackingState.None)
+            { 
+                Finder.gameObject.SetActive(true);
+            }
+
+            if (prefabsToSpawn != null)
+            {
+                Finder.gameObject.SetActive(false);
+                GetComponent<Transform>().transform.position = _arObjects[trackedImage.referenceImage.name].transform.position;
+
+               
+/*
+                _arObjects[trackedImage.referenceImage.name].gameObject.SetActive(true);
+                _arObjects[trackedImage.referenceImage.name].transform.position = trackedImage.transform.position;*/
+
+            }
 
         }
+
+
     }
 }
