@@ -1,0 +1,312 @@
+{
+	"TargetList": [
+		{
+			"Name": "test",
+			"FloorNumber": 0,
+			"Position": {
+				"x": -2,
+				"y": 0.0,
+				"z": 2
+			},
+			"Rotation": {
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			}
+		},
+		{
+			"Name": "IT-0_coworking-space",
+			"FloorNumber": 0,
+			"Position": {
+				"x": 42.5,
+				"y": 0.0,
+				"z": 13.7
+			},
+			"Rotation": {
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			}
+		},
+		{
+			"Name": "IT-1_vr-zone",
+			"FloorNumber": 0,
+			"Position": {
+				"x": 53,
+				"y": 0.0,
+				"z": -7
+			},
+			"Rotation": {
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			}
+		},
+		{
+			"Name": "IT-2_xr-lab",
+			"FloorNumber": 0,
+			"Position": {
+				"x": 33,
+				"y": 0.0,
+				"z": -7
+			},
+			"Rotation": {
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			}
+		},
+		{
+			"Name": "IT-3_computer-class-1",
+			"FloorNumber": 0,
+			"Position": {
+				"x": 12,
+				"y": 0.0,
+				"z": -7
+			},
+			"Rotation": {
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			}
+		},
+		{
+			"Name": "IT-4_server-room-1",
+			"FloorNumber": 0,
+			"Position": {
+				"x": -10,
+				"y": 0.0,
+				"z": 14
+			},
+			"Rotation": {
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			}
+		},
+		{
+			"Name": "IT-5_lecture-hall",
+			"FloorNumber": 0,
+			"Position": {
+				"x": -16,
+				"y": 0.0,
+				"z": -7
+			},
+			"Rotation": {
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			}
+		},
+		{
+			"Name": "IT-6_cebersecurity-lab",
+			"FloorNumber": 0,
+			"Position": {
+				"x": -23,
+				"y": 0.0,
+				"z": 14
+			},
+			"Rotation": {
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			}
+		},
+		{
+			"Name": "IT-7_video-studio",
+			"FloorNumber": 0,
+			"Position": {
+				"x": -45,
+				"y": 0.0,
+				"z": -7
+			},
+			"Rotation": {
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			}
+		},
+		{
+			"Name": "IT-8_staff-room",
+			"FloorNumber": 0,
+			"Position": {
+				"x": -38,
+				"y": 0.0,
+				"z": 14
+			},
+			"Rotation": {
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			}
+		},
+		{
+			"Name": "IT-9_lambda_lab",
+			"FloorNumber": 0,
+			"Position": {
+				"x": -60,
+				"y": 0.0,
+				"z": -7
+			},
+			"Rotation": {
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			}
+		},
+		{
+			"Name": "IT-10_meeting_room",
+			"FloorNumber": 0,
+			"Position": {
+				"x": -55,
+				"y": 0.0,
+				"z": 14
+			},
+			"Rotation": {
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			}
+		},
+		{
+			"Name": "IT-11_olympiad_room",
+			"FloorNumber": 0,
+			"Position": {
+				"x": -81,
+				"y": 0.0,
+				"z": -7
+			},
+			"Rotation": {
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			}
+		},
+		{
+			"Name": "IT-12_it-center",
+			"FloorNumber": 0,
+			"Position": {
+				"x": -92,
+				"y": 0.0,
+				"z": 3
+			},
+			"Rotation": {
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			}
+		},
+		{
+			"Name": "IT-13_M_B_Bulakina",
+			"FloorNumber": 0,
+			"Position": {
+				"x": -100,
+				"y": 0.0,
+				"z": 13
+			},
+			"Rotation": {
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			}
+		},
+		{
+			"Name": "IT-14_S_S_Krylov",
+			"FloorNumber": 0,
+			"Position": {
+				"x": -75,
+				"y": 0.0,
+				"z": 32
+			},
+			"Rotation": {
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			}
+		},
+		{
+			"Name": "IT-15_computer-class-2",
+			"FloorNumber": 0,
+			"Position": {
+				"x": -92,
+				"y": 0.0,
+				"z": 45
+			},
+			"Rotation": {
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			}
+		},
+		{
+			"Name": "IT-16_faculty_launge",
+			"FloorNumber": 0,
+			"Position": {
+				"x": -70,
+				"y": 0.0,
+				"z": 52
+			},
+			"Rotation": {
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			}
+		},
+		{
+			"Name": "IT-17_computer-class-3",
+			"FloorNumber": 0,
+			"Position": {
+				"x": -98,
+				"y": 0.0,
+				"z": 67
+			},
+			"Rotation": {
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			}
+		},
+		{
+			"Name": "IT-18_faculty_launge_2",
+			"FloorNumber": 0,
+			"Position": {
+				"x": -73,
+				"y": 0.0,
+				"z": 68
+			},
+			"Rotation": {
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			}
+		},
+		{
+			"Name": "IT-19_server_room_2",
+			"FloorNumber": 0,
+			"Position": {
+				"x": -98,
+				"y": 0.0,
+				"z": 88
+			},
+			"Rotation": {
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			}
+		},
+		{
+			"Name": "IT-20_Cafe",
+			"FloorNumber": 0,
+			"Position": {
+				"x": -98,
+				"y": 0.0,
+				"z": 107
+			},
+			"Rotation": {
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			}
+		}
+	]
+}

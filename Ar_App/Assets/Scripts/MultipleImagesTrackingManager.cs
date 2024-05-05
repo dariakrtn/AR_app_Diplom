@@ -13,7 +13,8 @@ public class MultipleImagesTrackingManager : MonoBehaviour
     private Dictionary<string, GameObject> _arObjects;
 
     [SerializeField] private GameObject Camera;
-    [SerializeField] private GameObject Finder;
+
+    [SerializeField] private GameObject Stop;
 
 
     private void Awake()
@@ -35,10 +36,10 @@ public class MultipleImagesTrackingManager : MonoBehaviour
         }
     }
 
+
     private void OnDestroy()
     {
         _arTrackedImageManager.trackedImagesChanged -= OnTrackedImageChanged;
-        Finder.gameObject.SetActive(true);
     }
 
     private void OnTrackedImageChanged(ARTrackedImagesChangedEventArgs eventArgs)
@@ -57,47 +58,38 @@ public class MultipleImagesTrackingManager : MonoBehaviour
         foreach (ARTrackedImage trackedImage in eventArgs.removed)
         {
             _arObjects[trackedImage.referenceImage.name].gameObject.SetActive(false);
-            Finder.gameObject.SetActive(true);
         }
     }
 
     private void UpdateTrackedImage(ARTrackedImage trackedImage, string id)
     {
-        if (id == "Human" && id =="Robot" ){ 
+        
             if (trackedImage.trackingState is  TrackingState.None) { //TrackingState.Limited or
                 _arObjects[trackedImage.referenceImage.name].gameObject.SetActive(false);
-                Finder.gameObject.SetActive(true);
+               
             }
 
             if (prefabsToSpawn !=null)
             {
-                Finder.gameObject.SetActive(false);
+                Stop.SetActive(true);
                 _arObjects[trackedImage.referenceImage.name].gameObject.SetActive(true);
                 _arObjects[trackedImage.referenceImage.name].transform.position = trackedImage.transform.position;
-
-            }
-        }
-        else
-        {
-            if (trackedImage.trackingState is TrackingState.None)
-            { 
-                Finder.gameObject.SetActive(true);
-            }
-
-            if (prefabsToSpawn != null)
+            if (Input.touchCount > 0)
             {
-                Finder.gameObject.SetActive(false);
-                GetComponent<Transform>().transform.position = _arObjects[trackedImage.referenceImage.name].transform.position;
-
-               
-/*
-                _arObjects[trackedImage.referenceImage.name].gameObject.SetActive(true);
-                _arObjects[trackedImage.referenceImage.name].transform.position = trackedImage.transform.position;*/
-
+                Touch touch = Input.GetTouch(0);
+                if (touch.phase == TouchPhase.Began)
+                {
+                    _arObjects[trackedImage.referenceImage.name].gameObject.SetActive(false);
+                }
             }
 
         }
-
+        
+        /*
+                        _arObjects[trackedImage.referenceImage.name].gameObject.SetActive(true);
+                        _arObjects[trackedImage.referenceImage.name].transform.position = trackedImage.transform.position;*/
 
     }
+
+
 }
