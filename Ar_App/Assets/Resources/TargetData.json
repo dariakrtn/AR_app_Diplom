@@ -1,20 +1,6 @@
 {
 	"TargetList": [
 		{
-			"Name": "test",
-			"FloorNumber": 0,
-			"Position": {
-				"x": -2,
-				"y": 0.0,
-				"z": 2
-			},
-			"Rotation": {
-				"x": 0.0,
-				"y": 0.0,
-				"z": 0.0
-			}
-		},
-		{
 			"Name": "IT-0_coworking-space",
 			"FloorNumber": 0,
 			"Position": {
